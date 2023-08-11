@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "IRANSans Black";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./fonts/IRANSansWeb_Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/IRANSansWeb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/dana-medium.eot");
+}
+body {
+  font-family: IRANSans !important;
+  background: linear-gradient(
+    90deg,
+    rgba(232, 243, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(232, 243, 255, 1) 100%
+  );
+  line-height: 1.6;
+}
+.page-title {
+  direction: rtl;
+  display: block !important;
+  text-align: center;
+  font-family: "dana";
+}
+
+.page-title h1 {
+  font-family: "dana";
+}
+
+.form-container {
+  width: 500px;
+  max-width: 80%;
+  margin: auto;
+}
+
+.rtl-form-field {
+  direction: rtl;
+  font-family: IRANSans !important;
+}
+
+.rtl-form-field * {
+  text-align: right !important;
+}
+
+.rtl-form-field input {
+  font-family: IRANSans !important;
+}
+
+.rtl-form-field textarea {
+  font-family: IRANSans !important;
+}
+
+.rtl-form-field button {
+  font-family: IRANSans !important;
+}
+
+.form-field {
+  direction: rtl;
+  font-family: IRANSans !important;
+}
+
+.form-field input {
+  direction: ltr;
+  font-family: IRANSans !important;
+}
+
+.form-field div.header {
+  font-family: IRANSans !important;
+}
+
+.form-field button {
+  font-family: IRANSans !important;
+}
+
+@media screen and (orientation: landscape) {
+  .hero-card {
+    transform: translate(-50%, -50%);
+    top: 45%;
+  }
+}
+@media screen and (orientation: portrait) {
+  .hero-card {
+    transform: translate(-50%, 0);
+    top: 0;
+  }
+}
+.hero-card {
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  margin-right: -100%;
+  margin-top: 20px;
+  margin-bottom: 20px !important;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  border-width: 1px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: lightblue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 5vh;
+}
+.hero-title {
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  direction: rtl;
+  color: #2e5a80;
+}
+.hero-welcome {
+  direction: rtl;
+  font-weight: bold;
+  font-size: x-large;
+}
+.hero-body {
+  direction: rtl;
+  font-size: large;
+  margin-bottom: 30px;
+  color: rgb(97, 97, 97);
+}
+.hero-subtitle {
+  font-size: x-large;
+  font-weight: bold;
+  direction: rtl;
+  margin-bottom: 10px;
+  color: #2e5a80;
+}
+.hero-button {
+  min-width: 300px;
+  max-width: 80%;
+  margin-top: 30px !important;
+  font-size: large !important;
+}
+.hero-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading {
+  width: 144px;
+  height: 100px;
+  position: relative;
+  margin: 0 auto;
+}
+.loading span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-color: #9b5986;
+  animation: Loading 3s infinite ease-in-out;
+}
+.loading span:nth-of-type(2) {
+  left: 30px;
+  animation-delay: 0.2s;
+}
+.loading span:nth-of-type(3) {
+  left: 60px;
+  animation-delay: 0.4s;
+}
+.loading span:nth-of-type(4) {
+  left: 90px;
+  animation-delay: 0.6s;
+}
+.loading span:last-of-type {
+  left: 120px;
+  animation-delay: 0.8s;
+}
+
+@keyframes Loading {
+  0% {
+    height: 20px;
+    transform: translateY(0);
+    background-color: #9b59b6;
+  }
+  50% {
+    height: 20px;
+    transform: translateY(50px);
+    background-color: #3498d6;
+  }
+  100% {
+    height: 20px;
+    transform: translateY(0);
+    background-color: #9b59b6;
+  }
+}

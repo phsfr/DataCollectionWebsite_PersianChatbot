@@ -1,0 +1,28 @@
+.help-container{
+    text-align: justify;
+    direction: rtl;
+}
+.sub-title{
+    text-align: right;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+.nav-elem{
+    padding: 3px 10px;
+    border-bottom-style: double;
+}
+.section{
+    text-align: justify;
+    direction: rtl;
+    padding-bottom: 30px;
+}
+.inside-img{
+    width: 60%;
+    margin: 10px auto;
+    display: block;
+    border-style: groove;
+}

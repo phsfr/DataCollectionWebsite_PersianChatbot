@@ -1,0 +1,48 @@
+{
+  "name": "data-collection-website-for-persian-chatbot",
+  "version": "1.0.0",
+  "description": "A chatting website to collect data for training Persian chatbot",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "prod": "node index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phsfr/DataCollectionWebsite_PersianChatbot.git"
+  },
+  "keywords": [
+    "NLP",
+    "AI",
+    "Artificiall",
+    "Intelligence",
+    "Information",
+    "Extraction"
+  ],
+  "author": "Pegah Safari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phsfr/DataCollectionWebsite_PersianChatbot/issues"
+  },
+  "homepage": "https://github.com/phsfr/DataCollectionWebsite_PersianChatbot#readme",
+  "dependencies": {
+    "apollo-server": "^2.19.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.15"
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "nodemon": "^2.0.6",
+    "prettier": "2.2.0",
+    "pretty-quick": "^3.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
